@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name weatherZoneApp.controller:AboutCtrl
+ * @name WeatherZone.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the weatherZoneApp
+ * Controller of the WeatherZone
  */
-angular.module('weatherZoneApp')
+angular.module('WeatherZone')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

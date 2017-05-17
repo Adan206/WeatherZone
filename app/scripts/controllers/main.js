@@ -2,16 +2,21 @@
 
 /**
  * @ngdoc function
- * @name weatherZoneApp.controller:MainCtrl
+ * @name WeatherZone.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the weatherZoneApp
+ * Controller of the WeatherZone
  */
-angular.module('weatherZoneApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+
+   angular.module('WeatherZone')
+     .controller('MainCtrl', function ($scope, citysearch, $localStorage) {
+       $scope.citiesFound = citysearch.find();
+       $scope.storage = $localStorage;
+
+       $scope.findCities = function(){
+           $scope.citiesFound = citysearch.find({
+               query: $scope.location
+           });
+           $scope.searchQuery = $scope.location;
+       };
+     });
