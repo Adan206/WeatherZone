@@ -8,10 +8,11 @@
  * Controller of the WeatherZone
  */
 angular.module('WeatherZone')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('AboutCtrl', function ($scope) {
+      			var currentDate = new Date();
+      			$scope.timeString = currentDate.toTimeString();
+      			$scope.updateTime = function() {
+      				var currentDate = new Date();
+      				$scope.timeString = currentDate.toTimeString();
+      			}
+      		});

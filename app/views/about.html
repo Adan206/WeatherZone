@@ -1,1 +1,10 @@
-<p>live love laugh</p>
+
+<h1>clock App</h1>
+
+  	 <div ng-controller="AboutCtrl">
+		 please enter ur name: <input ng-model="userName" type="text">
+		<p>current time is: {{timeString}}</p>
+		<p>your name is {{userName}}</p>
+		<button ng-click ="updateTime()">Update Time</button>
+
+    </div>
