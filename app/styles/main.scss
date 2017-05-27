@@ -24,8 +24,30 @@ body {
   background-repeat: no-repeat;
 
 
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #f7f3f3;
+  background-color: #fff;
+  }
 
 
+
+
+
+
+
+
+h1 {
+  color: #00ff00;
 }
 
 .cityList {
@@ -109,4 +131,19 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+dl.weather-forecast.ng-scope {
+  background-color: #520559;
+  max-width: auto;
+  padding: 2px;
+  margin: 5px;
+  float: left;
+}
+
+.jumbotron.ng-scope {
+  max-width: auto;
+  margin: auto;
+  background-color: black;
+  border: 2px solid grey;
+  padding: 10px;
 }
