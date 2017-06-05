@@ -1,5 +1,6 @@
 <h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
-<dl ng-repeat="prediction in forecastData.list" class="weather-forecast">
+<div class="row">
+<dl ng-repeat="prediction in forecastData.list" class=" col-sm-3 weather-forecast">
     <dt>Forecast for {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
     <dd>
     <img ng-src='http://openweathermap.org/img/w/{{prediction.weather[0].icon}}.png'
@@ -10,5 +11,6 @@
     <dt>Temperature</dt>
     <dd>Min: {{prediction.temp.min}} &deg;F Max: {{prediction.temp.max}} &deg;F</dd>
 </dl>
+</div>
 
-<p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
+<p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary col-sm-12">View Current Weather</a></p>
